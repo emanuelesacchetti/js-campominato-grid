@@ -16,9 +16,9 @@ bottonePlay.addEventListener('click',
             const gridDom = document.getElementById('grid');
             gridDom.innerHTML = '';
             
-            /*for (let i = 0; i < numeroQuadrati; i++){
+            for (let i = 0; i < numeroQuadrati; i++){
                 const square = newSquare(); 
-                if (difficoltaValue == 'facile'){
+                /*if (difficoltaValue == 'facile'){
                     numeroQuadrati = 100;
                     square.classList.add('facile');
                 }else if (difficoltaValue == 'medio'){
@@ -38,7 +38,7 @@ bottonePlay.addEventListener('click',
                 )
                 gridDom.append(square);
             }
-        }
+        
 )
 
 
