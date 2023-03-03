@@ -37,8 +37,7 @@ main {
     align-content: flex-start;
 }
 .square {
-    width: calc(100% / 10);
-    height: calc(100% / 10);
+   
     border: 2px solid white;
     display: flex;
     justify-content: center;
@@ -47,4 +46,16 @@ main {
 }
 .square.active {
     background-color: coral;
+}
+.square.facile {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+.square.medio {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+.square.difficile {
+    width: calc(100% / 8);
+    height: calc(100% / 8);
 }
