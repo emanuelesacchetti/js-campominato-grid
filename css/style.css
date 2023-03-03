@@ -30,7 +30,13 @@ main {
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .square.active {
     background-color: coral;
+}
+.hidden{
+    visibility:hidden;
 }
