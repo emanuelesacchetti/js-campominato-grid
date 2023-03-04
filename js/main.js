@@ -7,7 +7,7 @@ console.log(difficoltaValue);
 
 
 
-
+const square = newSquare();
 
 bottonePlay.addEventListener('click', 
     function (){
@@ -15,20 +15,31 @@ bottonePlay.addEventListener('click',
         
             const gridDom = document.getElementById('grid');
             gridDom.innerHTML = '';
-            
-            for (let i = 0; i < numeroQuadrati; i++){
-                const square = newSquare(); 
-                /*if (difficoltaValue == 'facile'){
-                    numeroQuadrati = 100;
-                    square.classList.add('facile');
-                }else if (difficoltaValue == 'medio'){
-                    numeroQuadrati = 90;
-                    square.classList.add('medio');
-                }else {
-                    numeroQuadrati = 80;
+
+            if (difficoltaValue == 'facile'){
+                numeroQuadrati = 100;
+                
+
+                for (let i = 0; i < numeroQuadrati; i++){
+                 
+                square.classList.add('facile');
+                }
+            }else if (difficoltaValue == 'medio'){
+                numeroQuadrati = 90;
+                
+
+                for (let i = 0; i < numeroQuadrati; i++){
+                square.classList.add('medio');    
+                }
+            }else {
+                numeroQuadrati = 80;
+                
+                for (let i = 0; i < numeroQuadrati; i++){
                     square.classList.add('difficile');
-                }*/
-            
+   
+                }
+            }  
+                
                 square.addEventListener('click', 
                     function(){
                         this.classList.toggle('active');
@@ -38,7 +49,7 @@ bottonePlay.addEventListener('click',
                 )
                 gridDom.append(square);
             }
-        
+           
 )
 
 
